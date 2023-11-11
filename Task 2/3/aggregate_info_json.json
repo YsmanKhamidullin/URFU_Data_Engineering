@@ -1,0 +1,102 @@
+{
+  "Peach": {
+    "avg_price": 53.53898496240601,
+    "max_price": 99.73,
+    "min_price": 5.67
+  },
+  "Kiwifruit": {
+    "avg_price": 51.08092,
+    "max_price": 99.87,
+    "min_price": 5.05
+  },
+  "Banana": {
+    "avg_price": 50.62439446366782,
+    "max_price": 99.51,
+    "min_price": 5.64
+  },
+  "Raspberry": {
+    "avg_price": 55.11627450980392,
+    "max_price": 99.6,
+    "min_price": 5.06
+  },
+  "Pineapple": {
+    "avg_price": 52.73697749196142,
+    "max_price": 99.56,
+    "min_price": 5.37
+  },
+  "Melon": {
+    "avg_price": 50.14295302013423,
+    "max_price": 98.83,
+    "min_price": 5.42
+  },
+  "Mango": {
+    "avg_price": 53.00935714285714,
+    "max_price": 99.68,
+    "min_price": 5.9
+  },
+  "Orange": {
+    "avg_price": 51.97454887218045,
+    "max_price": 99.6,
+    "min_price": 5.09
+  },
+  "Boysenberry": {
+    "avg_price": 50.73759398496241,
+    "max_price": 99.72,
+    "min_price": 5.05
+  },
+  "Cranberry": {
+    "avg_price": 53.63734615384615,
+    "max_price": 99.72,
+    "min_price": 5.08
+  },
+  "Grapes": {
+    "avg_price": 50.96562043795621,
+    "max_price": 99.75,
+    "min_price": 5.18
+  },
+  "Papaya": {
+    "avg_price": 54.18340740740741,
+    "max_price": 99.33,
+    "min_price": 5.48
+  },
+  "Blueberry": {
+    "avg_price": 51.702395833333334,
+    "max_price": 99.93,
+    "min_price": 5.05
+  },
+  "Guava": {
+    "avg_price": 52.252508361204015,
+    "max_price": 99.87,
+    "min_price": 5.89
+  },
+  "Cherry": {
+    "avg_price": 52.55984555984556,
+    "max_price": 99.6,
+    "min_price": 5.96
+  },
+  "Plum": {
+    "avg_price": 52.03107569721115,
+    "max_price": 100.0,
+    "min_price": 5.17
+  },
+  "Apple": {
+    "avg_price": 52.233792048929665,
+    "max_price": 99.89,
+    "min_price": 6.53
+  },
+  "Strawberry": {
+    "avg_price": 53.38029739776952,
+    "max_price": 99.87,
+    "min_price": 5.5
+  },
+  "Apricot": {
+    "avg_price": 52.90582554517134,
+    "max_price": 99.85,
+    "min_price": 5.95
+  },
+  "Blackberry": {
+    "avg_price": 52.29954372623574,
+    "max_price": 99.39,
+    "min_price": 6.37
+  }
+}
