@@ -7,7 +7,7 @@
 > Operating with different types of storing and parsing information.
 > .json, .csv, .pkl, .parquet
 
-# Task 2 &#x2611;
+# Task 3 &#x2611;
 > Parsing information from
 > .html and .xml
 
