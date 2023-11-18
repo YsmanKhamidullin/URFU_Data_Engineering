@@ -1,0 +1,29 @@
+[
+  {
+    "name": "trendy toothpaste",
+    "price": "17.65",
+    "quantity": 1005,
+    "category": "cosmetics",
+    "fromCity": "Бургос",
+    "isAvailable": "False",
+    "views": 65059
+  },
+  {
+    "name": "nice blackberry",
+    "price": "29.3",
+    "quantity": 1013,
+    "category": "fruit",
+    "fromCity": "Бильбао",
+    "isAvailable": "True",
+    "views": 11562
+  },
+  {
+    "name": "elegant chisel",
+    "price": "51.5",
+    "quantity": 1017,
+    "category": "tools",
+    "fromCity": "Ташкент",
+    "isAvailable": "False",
+    "views": 90842
+  }
+]
