@@ -6,28 +6,17 @@ import seaborn as sns
 from DataSetProcessor import DataSetProcessor
 
 
-def create_plots(path_to_csv, path_folder):
+def create_plots(path_to_csv, path_folder, categor_var, categor_column,
+                 num_columns):
     optimized_processor = DataSetProcessor(path_to_csv)
     optimized_processor.load_dataset()
-
     if not os.path.exists(path_folder):
         os.makedirs(path_folder)
 
-    list_dataset = optimized_processor.dataset.columns.tolist()
-    selected_columns = [col for col in list_dataset if pd.api.types.is_numeric_dtype(optimized_processor.dataset[col])]
-
-    selected_categorical_variable = random.choice(selected_columns)
-    selected_columns.remove(selected_categorical_variable)
-
-    selected_categorical_column = random.choice(selected_columns)
-    selected_columns.remove(selected_categorical_column)
-
-    selected_numeric_columns = random.sample(selected_columns, 2)
-
-    plot_bar_chart(selected_categorical_column, optimized_processor, path_folder)
-    plot_line_chart(selected_numeric_columns, optimized_processor, path_folder)
-    plot_pie_chart(selected_categorical_variable, optimized_processor, path_folder)
-    plot_scatter_plot(selected_numeric_columns, optimized_processor, path_folder)
+    plot_bar_chart(categor_column, optimized_processor, path_folder)
+    plot_pie_chart(categor_var, optimized_processor, path_folder)
+    plot_scatter_plot(num_columns, optimized_processor, path_folder)
+    plot_line_chart(num_columns, optimized_processor, path_folder)
 
 
 def save_plot(plot, path_folder, file_name):
@@ -41,8 +30,12 @@ def save_plot(plot, path_folder, file_name):
 
 def plot_bar_chart(selected_categorical_column, optimized_processor, path_folder):
     try:
-        plt.figure(figsize=(10, 6))
-        sns.countplot(x=selected_categorical_column, data=optimized_processor.dataset)
+        plt.figure(figsize=(15, 6))
+
+        value_counts = optimized_processor.dataset[selected_categorical_column].value_counts()
+        threshold = value_counts.max() / 6.0
+        filtered_counts = value_counts[value_counts >= threshold]
+        filtered_counts.plot.bar()
         plt.title(f'Bar Chart: Count of Unique Values in Categorical Column. x:{selected_categorical_column}')
         save_plot(plt, path_folder, 'bar_chart.png')
     except Exception as e:
@@ -62,8 +55,12 @@ def plot_line_chart(selected_numeric_columns, optimized_processor, path_folder):
 
 def plot_pie_chart(selected_categorical_variable, optimized_processor, path_folder):
     try:
-        plt.figure(figsize=(12, 12))
-        optimized_processor.dataset[selected_categorical_variable].value_counts().plot.pie()
+        plt.figure(figsize=(6, 6))
+        value_counts = optimized_processor.dataset[selected_categorical_variable].value_counts()
+        threshold = value_counts.max() / 2.0
+        filtered_counts = value_counts[value_counts >= threshold]
+
+        filtered_counts.plot.pie(autopct='%1.1f%%', startangle=90)
         plt.title(f'Pie Chart: Distribution of Categorical Variable: {selected_categorical_variable}')
         save_plot(plt, path_folder, 'pie_chart.png')
     except Exception as e:

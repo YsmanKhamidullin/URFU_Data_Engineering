@@ -1,6 +1,7 @@
 import os
 import random
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import seaborn as sns
 
@@ -19,6 +20,7 @@ class DataSetProcessor:
 
         for chunk in chunks:
             self.dataset = pd.concat([self.dataset, chunk], ignore_index=True)
+            print(self.dataset.columns)
             return
 
     def analyze_memory(self):
@@ -74,3 +76,9 @@ class DataSetProcessor:
 
         subset.to_csv(output_file, index=False)
         print("Subset saved to:", output_file)
+
+    def additional_optimize(self, numeric_columns, numeric_threshold):
+        i = 0
+        for column in numeric_columns:
+            self.dataset = self.dataset[self.dataset[column] >= numeric_threshold[i]]
+            i += 1

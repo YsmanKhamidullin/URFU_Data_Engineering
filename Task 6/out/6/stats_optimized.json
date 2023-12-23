@@ -1,0 +1,232 @@
+{
+  "schema":{
+    "fields":[
+      {
+        "name":"index",
+        "type":"string"
+      },
+      {
+        "name":"memory_usage",
+        "type":"integer"
+      },
+      {
+        "name":"percentage_of_total",
+        "type":"number"
+      },
+      {
+        "name":"dtype",
+        "type":"string"
+      }
+    ],
+    "primaryKey":[
+      "index"
+    ],
+    "pandas_version":"1.4.0"
+  },
+  "data":[
+    {
+      "index":"chest gyroscope Y",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest gyroscope Z",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand temperature (\u00b0C)",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand magnetometer Z",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand magnetometer Y",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand magnetometer X",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand gyroscope Z",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand gyroscope Y",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand gyroscope X",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand acceleration Z \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand acceleration Y \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"hand acceleration X \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest temperature (\u00b0C)",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest magnetometer Z",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest magnetometer Y",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest magnetometer X",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"heart_rate",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle magnetometer X",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest acceleration Z \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest acceleration Y \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest acceleration X \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle temperature (\u00b0C)",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle magnetometer Z",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle magnetometer Y",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"chest gyroscope X",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle gyroscope Z",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle gyroscope Y",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle gyroscope X",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle acceleration Z \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle acceleration Y \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"ankle acceleration X \u00b116g",
+      "memory_usage":600000,
+      "percentage_of_total":3.1744849292,
+      "dtype":"float32"
+    },
+    {
+      "index":"activityID",
+      "memory_usage":150576,
+      "percentage_of_total":0.7966687378,
+      "dtype":"category"
+    },
+    {
+      "index":"PeopleId",
+      "memory_usage":150000,
+      "percentage_of_total":0.7936212323,
+      "dtype":"int8"
+    },
+    {
+      "index":"Index",
+      "memory_usage":128,
+      "percentage_of_total":0.0006772235,
+      "dtype":null
+    }
+  ]
+}

@@ -19,8 +19,6 @@ def algo(file_path):
     print("analyze_memory_after_optimization finish")
     processor.select_and_save_subset(output_file_subset)
     print("select_and_save_subset finish")
-    plots_builder.create_plots(output_file_subset, output_plots_folder)
-    print("construct_graphs finish")
 
 
 file_paths = [
@@ -29,19 +27,31 @@ file_paths = [
     "DataSet/[3]flights/dataset.csv",
     "DataSet/[4]vacancies/dataset.csv",
     "DataSet/[5]asteroid/dataset.csv",
+    "DataSet/[6]physical/dataset.csv",
 ]
 
-for i, file_path in enumerate(file_paths, start=1):
-    print(f"Processing file {i}: {file_path}")
-    output_file_stats = f"out/{i}/stats.json"
-    output_file_optimized_stats = f"out/{i}/stats_optimized.json"
-    output_file_subset = f"out/{i}/subset.csv"
-    output_plots_folder = f"out/{i}/plots"
+# for i, file_path in enumerate(file_paths, start=1):
+#     if i > 5:
+#         print(f"Processing file {i}: {file_path}")
+#         output_file_stats = f"out/{i}/stats.json"
+#         output_file_optimized_stats = f"out/{i}/stats_optimized.json"
+#         output_file_subset = f"out/{i}/subset.csv"
+#         output_plots_folder = f"out/{i}/plots"
+#
+#         os.makedirs(os.path.dirname(output_file_stats), exist_ok=True)
+#         os.makedirs(os.path.dirname(output_file_optimized_stats), exist_ok=True)
+#         os.makedirs(os.path.dirname(output_file_subset), exist_ok=True)
+#         os.makedirs(output_plots_folder, exist_ok=True)
+#
+#         algo(file_path)
+#         print(f"Processed file {i}: {file_path}")
 
-    os.makedirs(os.path.dirname(output_file_stats), exist_ok=True)
-    os.makedirs(os.path.dirname(output_file_optimized_stats), exist_ok=True)
-    os.makedirs(os.path.dirname(output_file_subset), exist_ok=True)
-    os.makedirs(output_plots_folder, exist_ok=True)
+output_file_subset = f"out/6/subset.csv"
+output_plots_folder = f"out/6/plots"
+categor_var = 'heart_rate'
+categor_column = 'hand temperature (°C)'
+num_columns = ['hand gyroscope X',
+               'hand gyroscope Y']
 
-    algo(file_path)
-    print(f"Processed file {i}: {file_path}")
+plots_builder.create_plots(output_file_subset, output_plots_folder, categor_var, categor_column,
+                           num_columns)
