@@ -34,8 +34,11 @@
 >
 >```
 >Example of sorting and filtering
-> 
 
+# Task 5 &#x2611;
+> MongoDb with query aggregation  
+# Task 6 &#x2611;
+> Disk application
 # Info
 >Задания по Программной инженерии 
 > 
