@@ -13,10 +13,25 @@ def create_plots(path_to_csv, path_folder, categor_var, categor_column,
     if not os.path.exists(path_folder):
         os.makedirs(path_folder)
 
-    plot_bar_chart(categor_column, optimized_processor, path_folder)
-    plot_pie_chart(categor_var, optimized_processor, path_folder)
-    plot_scatter_plot(num_columns, optimized_processor, path_folder)
-    plot_line_chart(num_columns, optimized_processor, path_folder)
+    # plot_bar_chart(categor_column, optimized_processor, path_folder)
+    # plot_pie_chart(categor_var, optimized_processor, path_folder)
+    # plot_scatter_plot(num_columns, optimized_processor, path_folder)
+    # plot_line_chart(num_columns, optimized_processor, path_folder)
+    plot_histogram(categor_var, optimized_processor, path_folder)
+
+
+def plot_histogram(categor_column, optimized_processor, path_folder):
+    try:
+        plt.figure(figsize=(15, 6))
+        optimized_processor.dataset.plot.hist(column=categor_column, bins=40, density=True)
+        # value_counts = optimized_processor.dataset[selected_categorical_column].value_counts()
+        # threshold = value_counts.max() / 6.0
+        # filtered_counts = value_counts[value_counts >= threshold]
+        # filtered_counts.plot.bar()
+        plt.title(f'Histogram: Count of Unique Values: {categor_column}')
+        save_plot(plt, path_folder, 'histogram.png')
+    except Exception as e:
+        print(f"An error occurred in plot_bar_chart: {e}")
 
 
 def save_plot(plot, path_folder, file_name):
