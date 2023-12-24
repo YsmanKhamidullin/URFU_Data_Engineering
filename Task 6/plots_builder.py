@@ -24,11 +24,7 @@ def plot_histogram(categor_column, optimized_processor, path_folder):
     try:
         plt.figure(figsize=(15, 6))
         optimized_processor.dataset.plot.hist(column=categor_column, bins=40, density=True)
-        # value_counts = optimized_processor.dataset[selected_categorical_column].value_counts()
-        # threshold = value_counts.max() / 6.0
-        # filtered_counts = value_counts[value_counts >= threshold]
-        # filtered_counts.plot.bar()
-        plt.title(f'Histogram: Count of Unique Values: {categor_column}')
+        plt.title(f'Histogram: Frequency of Unique Values: {categor_column}')
         save_plot(plt, path_folder, 'histogram.png')
     except Exception as e:
         print(f"An error occurred in plot_bar_chart: {e}")
